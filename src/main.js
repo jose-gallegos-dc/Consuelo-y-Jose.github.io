@@ -46,7 +46,7 @@ function changeTextCounterElement(element, time, text1, text2){
 // Contar tiempo de relación
 var DateTime = luxon.DateTime;
 function countLove(){
-    fetch('http://worldtimeapi.org/api/timezone/America/Mexico_City')
+    fetch('https://worldtimeapi.org/api/timezone/America/Mexico_City')
     .then(
     function(response) {
         if (response.status !== 200) {
