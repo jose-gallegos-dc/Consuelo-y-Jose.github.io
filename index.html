@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consuelo y José</title>
+    <link rel="icon" href="src/images/icono.png">
+    <link rel="stylesheet" href="src/swiper-bundle.min.css">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="min-h-screen bg-gray-100">
+    <!-- BARRA DE NAVEGACIÓN -->
+    <div class="sticky top-0 z-50">
+        <nav class="bg-red-600 h-14 lg:h-20 flex justify-between lg:justify-start items-center transition shadow-md" >
+            <div class="logo px-1 w-1/6 ">
+                <img src="src/images/amor.png" class="w-16 lg:w-20" alt="amor" onclick="playMusic()">
+            </div>
+            <div class="links md:w-4/6  hidden  transition lg:block" id="navlinks">
+                <ul class="menu text-gray-100 text-xl font-medium text-center absolute z-50 left-0 top-[55px] bg-red-600 w-full  lg:static lg:items-center  lg:gap-8 lg:flex lg: justify-center ">
+                    <li><a href="#" class="link active">Inicio</a></li>
+                    <li><a href="#" class="link">Acerca de</a></li>
+                    <li><a href="#" class="link">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="block lg:hidden px-3">
+                <button id="hamburger" class="relative w-10 h-10">
+                    <div role="hidden" id="line" class="inset-0 w-6 h-0.5 m-auto rounded-full bg-gray-800 transition duration-300"></div>
+                    <div role="hidden" id="line2" class="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-gray-800 transition duration-300"></div>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <!-- CARRUSEL -->
+    <div class="lg:grid lg:grid-cols-2 lg:gap-4">
+        <div class="py-4">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/EllayYo.jpg" class="slide-image"/>
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">Cortejando</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/inicios.jpg" class="slide-image" />
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">Solitos en la oficina</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/parque_bicentenario_1.jpg" class="slide-image"/>
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">Parque bicentenario</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/BarTecate.jpg" class="slide-image" />
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">Bar tecate</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/dia_de_muertos.jpg" class="slide-image" />
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">Día de muertos</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/sancris_cena.jpg" class="slide-image" />
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">Primera vez  en Sancris</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/sillón.jpg" class="slide-image"/>
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">En el sillón</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/vinito.jpg" class="slide-image"/>
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">Echando un vinito</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/estacionamiento.jpg" class="slide-image"/>
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">Estacionamiento</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/boda.jpg" class="slide-image"/>
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">Boda</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/macarena.jpg" class="slide-image"/>
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">Cena en la macarena</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/amarillo.jpg" class="slide-image"/>
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">Amarillito</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/sancris_3.jpg" class="slide-image"/>
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">Primer aniversario</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/images/carousel/sancris_2.jpg" class="slide-image"/>
+                        <div class="flex justify-center">
+                            <div class="absolute slide-text">Primer aniversario</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next slide-arrow right-0"></div>
+                <div class="swiper-button-prev slide-arrow left-0"></div>
+            </div>
+        </div>
+        <!-- CONTADOR DE LA RELACIÓN -->
+        <div class="py-4">
+            <div class="card  mx-auto  rounded-2xl overflow-hidden xl:w-4/5  text-center font-medium">
+                <h1 class="text-2xl font-bold  text-gray-900">Nuestra historia...</h1>
+                <div class="flex justify-center pt-2">
+                    <div class="dias px-2">
+                        <div class="w-[76px] h-[76px] bg-red-600 rounded-full flex justify-center items-center text-center p-4 shadow-xl text-3xl text-gray-100">
+                            <span id="days">0</span>
+                        </div>
+                        <span class="text-lg text-center text-gray-800"  id="daysText">días</span>
+                    </div>
+                    <div class="horas px-2">
+                        <div class="w-[76px] h-[76px] bg-red-600 rounded-full flex justify-center items-center text-center p-4 shadow-xl text-3xl text-gray-100">
+                            <span id="hours">0</span>
+                        </div>
+                        <span class="text-lg text-center  text-gray-800"  id="hoursText">hora</span>
+                    </div>
+                    <div class="minutos px-2">
+                        <div class="w-[76px] h-[76px] bg-red-600 rounded-full flex justify-center items-center text-center p-4 shadow-xl text-3xl text-gray-100">
+                            <span id="minutes">0</span>
+                        </div>
+                        <span class="text-lg text-center  text-gray-800" id="minutesText">minuto</span>
+                    </div>
+                    <div class="segundos px-2">
+                        <div class="w-[76px] h-[76px] bg-red-600 rounded-full flex justify-center items-center text-center p-4 shadow-xl text-3xl text-gray-100">
+                            <span id="seconds">0</span>
+                        </div>
+                        <span class="text-lg text-center  text-gray-800" id="secondsText">segundo</span>
+                    </div>
+                </div>
+            </div>
+            <!-- TARJETA INFORMATIVA -->
+            <div class=" flex  justify-center items-center py-6">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg text-center text-lg text-gray-800">
+                    <div class="flex  justify-center">
+                        <img class="h-44 w-44" src="src/images/monitos.gif" alt="Mountain">
+                    </div>
+                    <div class="font-bold text-2xl py-2">El amor a través del tiempo</div>
+                    <div class="flex items-center h-28">
+                        <p class="mx-2" id="defaultText">
+                            Definir al amor por el tiempo es sumamente complicado, sin embargo, el fin de esta página es sólo recordar a los sujetos involucrados en esta historia lo siguiente...
+                        </p>
+                        <p class="mx-2 hidden" id="textQ">
+                            Comenzamos a forjar esta relación, la cual puede durar un periodo entre 0 e “infinitamente” cantidad de años.
+                        </p>
+                        <p class="mx-2 hidden" id="textDYC">
+                            En la calle cerca de una jardinera, un 19 de julio del 2021 alrededor de las 2 de la tarde.
+                        </p>
+                        <p class="mx-2 hidden " id="textC">
+                            La vida juntó a los involucrados, uno sugirió comenzar la relación que anteriormente se anhelaba por ambas partes, el otro sujeto asintió con todas las esperanzas del mundo.
+                        </p>
+                    </div>
+                    <div class="px-4 pt-4">
+                        <span class="inline-block bg-gray-200 rounded-full px-2 py-1 text-base font-semibold text-gray-800 mr-2 mb-2 cursor-pointer" id="btnTextQ" onclick="changeTextCard('textQ', ['textDYC', 'textC'], 'btnTextQ', ['btnTextDYC', 'btnTextC'])">
+                            ¿Qué?
+                        </span>
+                        <span class="inline-block bg-gray-200 rounded-full px-2 py-1 text-base font-semibold text-gray-800 mr-2 mb-2 cursor-pointer" id="btnTextDYC" onclick="changeTextCard('textDYC', ['textQ', 'textC'], 'btnTextDYC', ['btnTextQ', 'btnTextC'])">
+                            ¿Dónde y Cuándo?
+                        </span>
+                        <span class="inline-block bg-gray-200 rounded-full px-2 py-1 text-base font-semibold text-gray-800 mr-2 mb-2 cursor-pointer" id="btnTextC" onclick="changeTextCard('textC', ['textQ', 'textDYC'] ,'btnTextC', ['btnTextQ', 'btnTextDYC'])">
+                            ¿Cómo?
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/luxon.min.js"></script>
+    <script src="src/swiper-bundle.min.js"></script>   
+    <script src="src/main.js"></script>
+</body>
+</html>
