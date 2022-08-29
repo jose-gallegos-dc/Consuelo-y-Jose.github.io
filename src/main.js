@@ -21,17 +21,16 @@ hamburger.addEventListener('click', function (){
 
 // carrusel
 var swiper = new Swiper(".mySwiper", {
-    effect: "cube",
+    effect: "flip",
     grabCursor: true,
     loop: true,
     autoplay: {
     delay: 3500,
     disableOnInteraction: false,
     },
-    cubeEffect: {
-      shadow: false,
-      slideShadows: false,
-    },
+    keyboard: {
+        enabled: true,
+     },
     navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -46,7 +45,7 @@ function changeTextCounterElement(element, time, text1, text2){
 // Contar tiempo de relación
 var DateTime = luxon.DateTime;
 function countLove(){
-    fetch('https://worldtimeapi.org/api/timezone/America/Mexico_City')
+    fetch('http://worldtimeapi.org/api/timezone/America/Mexico_City')
     .then(
     function(response) {
         if (response.status !== 200) {
