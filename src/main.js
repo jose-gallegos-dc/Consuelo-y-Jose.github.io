@@ -30,7 +30,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     cubeEffect: {
       shadow: false,
-      slideShadows: true,
+      slideShadows: false,
     },
     navigation: {
     nextEl: ".swiper-button-next",
