@@ -1074,8 +1074,19 @@ video {
 }
 
 .swiper {
-  height: 460px;
-  width: 345px;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .swiper {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper {
+    width: 60%;
+  }
 }
 
 /* w-[345px] h-[460px] */
